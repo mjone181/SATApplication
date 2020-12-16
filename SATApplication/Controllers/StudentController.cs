@@ -13,5 +13,10 @@ namespace SATApplication.Controllers
         {
             return View();
         }
+        
+        public ActionResult Student()
+        {
+            return View();
+        }
     }
 }

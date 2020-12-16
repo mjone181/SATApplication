@@ -360,10 +360,10 @@
     <Content Include="_Archive\assets\img\testimonial\.DS_Store" />
     <Content Include="_Archive\assets\js\.DS_Store" />
     <Content Include="Views\Shared\Original_Layout.cshtml" />
+    <Content Include="Views\Student\Student.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Student\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
