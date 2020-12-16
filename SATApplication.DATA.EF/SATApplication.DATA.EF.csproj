@@ -58,6 +58,7 @@
     <Compile Include="Enrollment.cs">
       <DependentUpon>SATData.tt</DependentUpon>
     </Compile>
+    <Compile Include="Metadata\SATMetadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SATData.Context.cs">
       <AutoGen>True</AutoGen>
