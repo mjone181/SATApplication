@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace SATApplication
+namespace SATApplication.UI.MVC
 {
     public class FilterConfig
     {
