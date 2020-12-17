@@ -49,5 +49,32 @@ namespace SATApplication.Controllers
 
             return View();
         }
+
+        //GET
+        public ActionResult Create()
+        {
+            ViewBag.StudentId = new SelectList(db.Students, "StudentId", "Student");
+            ViewBag.StudentStatusID = new SelectList(db.StudentStatuses, "SSID", "StudentStatuses");            
+            return View();
+        }
+
+        //POST
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "StudentId, FirstName, LastName, Major, Address, City, State, ZipCode, Phone, Email, PhotoUrl, SSID")] Student student)
+        {
+            if (ModelState.IsValid)
+            {             
+                //Add a new Student to the Database with a view if the Model is valid.
+                db.Students.Add(student);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            //Grabbing the newly entered data and displaying it to the screen.
+            ViewBag.StudentId = new SelectList(db.Students, "StudentId", "StudentId", student.StudentId);
+            ViewBag.BookStatusID = new SelectList(db.StudentStatuses, "SSID", "SSName", student.SSID);            
+            return View(student);
+        }
     }
 }
