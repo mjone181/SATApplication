@@ -90,29 +90,29 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
     <EntityDeploy Include="SATData.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>SATData.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="packages.config" />
     <None Include="SATData.edmx.diagram">
       <DependentUpon>SATData.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="SATData.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SATData.Context.cs</LastGenOutput>
       <DependentUpon>SATData.edmx</DependentUpon>
+      <LastGenOutput>SATData.Context.cs</LastGenOutput>
     </Content>
     <Content Include="SATData.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SATData.edmx</DependentUpon>
       <LastGenOutput>SATData.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

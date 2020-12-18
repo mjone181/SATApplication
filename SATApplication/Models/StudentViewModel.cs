@@ -18,13 +18,13 @@ namespace SATApplication.Models
         public string Phone { get; set; }        
         public string Email { get; set; }        
         public string PhotoUrl { get; set; }
-        public Nullable<int> SSID { get; set; }
+        public int SSID { get; set; }
         public StudentStatusesViewModel StudentStatuses { get; set; }        
     }
 
     public class StudentStatusesViewModel
     {        
-        public Nullable<int> SSID { get; set; }        
+        public int SSID { get; set; }        
         public string SSName { get; set; }        
         public string SSDescription { get; set; }
     }

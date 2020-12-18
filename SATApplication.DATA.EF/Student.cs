@@ -31,7 +31,7 @@ namespace SATApplication.DATA.EF
         public string Phone { get; set; }
         public string Email { get; set; }
         public string PhotoUrl { get; set; }
-        public Nullable<int> SSID { get; set; }
+        public int SSID { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Enrollment> Enrollments { get; set; }

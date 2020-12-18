@@ -119,7 +119,7 @@ namespace SATApplication.DATA.EF.Metadata
         [Display(Name = "Photo URL: ")]
         [DisplayFormat(NullDisplayText = "[-N/A-]")]
         public string PhotoUrl { get; set; }
-        public Nullable<int> SSID { get; set; }
+        public int SSID { get; set; }
         #endregion
 
         //Student Status Metadata

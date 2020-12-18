@@ -54,7 +54,7 @@ namespace SATApplication.Controllers
         public ActionResult Create()
         {
             ViewBag.StudentId = new SelectList(db.Students, "StudentId", "Student");
-            ViewBag.StudentStatusID = new SelectList(db.StudentStatuses, "SSID", "StudentStatuses");            
+            //ViewBag.StudentStatusID = new SelectList(db.StudentStatuses, "SSID", "StudentStatuses");            
             return View();
         }
 
