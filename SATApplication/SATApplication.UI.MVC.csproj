@@ -364,6 +364,7 @@
     <Content Include="Views\Shared\Original_Layout.cshtml" />
     <Content Include="Views\Student\Student.cshtml" />
     <Content Include="Views\Student\Create.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -16,7 +16,9 @@ namespace SATApplication.Controllers
         // GET: Student
         public ActionResult Index()
         {
-            return View();
+            var students = (from s in db.Students
+                            select s).ToList();
+            return View(students);
         }
 
         public ActionResult Student()
